@@ -5,21 +5,21 @@
 class Tukituki < Formula
   desc "A terminal UI for managing multiple dev processes"
   homepage "https://github.com/dvaldivia/tukituki"
-  version "0.0.9"
+  version "0.0.10"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/dvaldivia/tukituki/releases/download/v0.0.9/tukituki_darwin_amd64.tar.gz"
-      sha256 "f116191a9cb95262f295dea0a2feacd0af16a7c037945c605871924eb58e03be"
+      url "https://github.com/dvaldivia/tukituki/releases/download/v0.0.10/tukituki_darwin_amd64.tar.gz"
+      sha256 "7b36bb900bcd1403f4d460551604efc2927353483be3ed1d7e5cb56ab245c9da"
 
       define_method(:install) do
         bin.install "tukituki"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/dvaldivia/tukituki/releases/download/v0.0.9/tukituki_darwin_arm64.tar.gz"
-      sha256 "9288b6a280b6aea7cd5624e25b1da1e78062f95cd32e4cf70b514e98ccc6c8e1"
+      url "https://github.com/dvaldivia/tukituki/releases/download/v0.0.10/tukituki_darwin_arm64.tar.gz"
+      sha256 "bd8d4c08452a7343cad04f04d74be92e365eae94288f3d1aa7e81b294642e353"
 
       define_method(:install) do
         bin.install "tukituki"
@@ -29,15 +29,15 @@ class Tukituki < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dvaldivia/tukituki/releases/download/v0.0.9/tukituki_linux_amd64.tar.gz"
-      sha256 "667b8ff906ee3af5e0447c32e982a3de1d5c52ac01a70170e4c25556cec6ae2c"
+      url "https://github.com/dvaldivia/tukituki/releases/download/v0.0.10/tukituki_linux_amd64.tar.gz"
+      sha256 "880bd3a2f8744cbcbddc26eb95659b9fb17e315166407dfc924cccf2ae4677e9"
       define_method(:install) do
         bin.install "tukituki"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dvaldivia/tukituki/releases/download/v0.0.9/tukituki_linux_arm64.tar.gz"
-      sha256 "99908e228f1ab32616c2fdb4171c28cdaf91dac72bad21d3351c4fcfc87721e5"
+      url "https://github.com/dvaldivia/tukituki/releases/download/v0.0.10/tukituki_linux_arm64.tar.gz"
+      sha256 "90b3eb67ad5c5c365d24bfe80f78020f46b728fcc54d42e17bdf4ce98452fbfc"
       define_method(:install) do
         bin.install "tukituki"
       end
