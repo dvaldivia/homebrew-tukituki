@@ -5,46 +5,51 @@
 class Tukituki < Formula
   desc "A terminal UI for managing multiple dev processes"
   homepage "https://github.com/dvaldivia/tukituki"
-  version "0.0.16"
+  version "0.0.17"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/dvaldivia/tukituki/releases/download/v0.0.16/tukituki_darwin_amd64.tar.gz"
-      sha256 "641c29a44d5ecdcf57d02187156c9ad3510784b49cf696545e5f181993d31e18"
+      url "https://github.com/dvaldivia/tukituki/releases/download/v0.0.17/tukituki_darwin_amd64.tar.gz"
+      sha256 "effda12500306c4feca5741400277bbac324ddd6badcc6ec15ea678f0bdf8a49"
 
       define_method(:install) do
         bin.install "tukituki"
+        bin.install_symlink "tukituki" => "tktk"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/dvaldivia/tukituki/releases/download/v0.0.16/tukituki_darwin_arm64.tar.gz"
-      sha256 "024afd029160ae3cb1d991db2fb75b3d383fe5af411fcf119bb9dd5e004f9bc9"
+      url "https://github.com/dvaldivia/tukituki/releases/download/v0.0.17/tukituki_darwin_arm64.tar.gz"
+      sha256 "5e562f278937bbdb2c41a6c78f78b4dc0bf540ad8269931d63707193de7a39f2"
 
       define_method(:install) do
         bin.install "tukituki"
+        bin.install_symlink "tukituki" => "tktk"
       end
     end
   end
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dvaldivia/tukituki/releases/download/v0.0.16/tukituki_linux_amd64.tar.gz"
-      sha256 "9cfcbbc1a21ea6d9f9b899465698367d6ae058dc8cc3ec50c03efaaceff87ac5"
+      url "https://github.com/dvaldivia/tukituki/releases/download/v0.0.17/tukituki_linux_amd64.tar.gz"
+      sha256 "9f74b5f3d530889bed446a29f21b3ea9fa47ee9b133de010371d99b610fd493c"
       define_method(:install) do
         bin.install "tukituki"
+        bin.install_symlink "tukituki" => "tktk"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dvaldivia/tukituki/releases/download/v0.0.16/tukituki_linux_arm64.tar.gz"
-      sha256 "ad84af16f7dc2dafa7290d9d018c21b8e0045be350fa9650e5d933f334b08c14"
+      url "https://github.com/dvaldivia/tukituki/releases/download/v0.0.17/tukituki_linux_arm64.tar.gz"
+      sha256 "78764bd03715c8420a0b3c3411b407aa4d9bab6a3893f3901eed680464633a5b"
       define_method(:install) do
         bin.install "tukituki"
+        bin.install_symlink "tukituki" => "tktk"
       end
     end
   end
 
   test do
     system "#{bin}/tukituki", "--version"
+    system "#{bin}/tktk", "--version"
   end
 end
