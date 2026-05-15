@@ -1,34 +1,34 @@
 # Homebrew formula template for tukituki.
 #
-# `homebrew/render.sh` fills in 0.1.0 and the four __SHA__
+# `homebrew/render.sh` fills in 0.1.1 and the four __SHA__
 # placeholders, then commits the rendered file to
 # dvaldivia/homebrew-tukituki/Formula/tukituki.rb.
 
 class Tukituki < Formula
   desc "Terminal UI for managing multiple dev processes"
   homepage "https://github.com/dvaldivia/tukituki"
-  version "0.1.0"
+  version "0.1.1"
   license "Apache-2.0"
 
   on_macos do
     on_arm do
-      url "https://github.com/dvaldivia/tukituki/releases/download/v0.1.0/tukituki_darwin_arm64.tar.gz"
-      sha256 "e89fbb9b8bc96b2cb130965102cdf2deb30ec0c0cc40515b00091dd41d018acf"
+      url "https://github.com/dvaldivia/tukituki/releases/download/v0.1.1/tukituki_darwin_arm64.tar.gz"
+      sha256 "d136b5c8b9177cf04480cbf52bdb2502d7437953936308754f2c5a0dc72d21c3"
     end
     on_intel do
-      url "https://github.com/dvaldivia/tukituki/releases/download/v0.1.0/tukituki_darwin_x86_64.tar.gz"
-      sha256 "976925ea7c60ea46b1ff70ff50014ac5d37dec06e5a3677b76c6b9552e0ff52d"
+      url "https://github.com/dvaldivia/tukituki/releases/download/v0.1.1/tukituki_darwin_x86_64.tar.gz"
+      sha256 "457e4302e0e6d100d45f4ab1487087f39f51eae32028c73361cf3c15bfd3ca28"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/dvaldivia/tukituki/releases/download/v0.1.0/tukituki_linux_arm64.tar.gz"
-      sha256 "2d3d0d23c9691a8d19403e163aee7df47d90e44f3b36063d9c85cbba420aa6ec"
+      url "https://github.com/dvaldivia/tukituki/releases/download/v0.1.1/tukituki_linux_arm64.tar.gz"
+      sha256 "b7754254d6896112b00b57508080fca6020ed8d01e380d4a0c2fbcab422f3bee"
     end
     on_intel do
-      url "https://github.com/dvaldivia/tukituki/releases/download/v0.1.0/tukituki_linux_x86_64.tar.gz"
-      sha256 "9398605d08867040a444b13b6aed9c589cc74b81ff1002999dec3f307cbbf08c"
+      url "https://github.com/dvaldivia/tukituki/releases/download/v0.1.1/tukituki_linux_x86_64.tar.gz"
+      sha256 "1d6eb90601e9d5e26eb622f7da23cbb60b99b92ba3ed03c1cb2224caf35a879a"
     end
   end
 
