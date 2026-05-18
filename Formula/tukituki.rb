@@ -1,34 +1,34 @@
 # Homebrew formula template for tukituki.
 #
-# `homebrew/render.sh` fills in 0.1.2 and the four __SHA__
+# `homebrew/render.sh` fills in 0.1.3 and the four __SHA__
 # placeholders, then commits the rendered file to
 # dvaldivia/homebrew-tukituki/Formula/tukituki.rb.
 
 class Tukituki < Formula
   desc "Terminal UI for managing multiple dev processes"
   homepage "https://github.com/dvaldivia/tukituki"
-  version "0.1.2"
+  version "0.1.3"
   license "Apache-2.0"
 
   on_macos do
     on_arm do
-      url "https://github.com/dvaldivia/tukituki/releases/download/v0.1.2/tukituki_darwin_arm64.tar.gz"
-      sha256 "5d1d9d66dd0fb9d64d3092e76366141fa76c071b213c279d3b32e1494eb1c4de"
+      url "https://github.com/dvaldivia/tukituki/releases/download/v0.1.3/tukituki_darwin_arm64.tar.gz"
+      sha256 "0b3905a58a8634895f6f4c521b89a677d5e670238d41c0a50da5f111c423f089"
     end
     on_intel do
-      url "https://github.com/dvaldivia/tukituki/releases/download/v0.1.2/tukituki_darwin_x86_64.tar.gz"
-      sha256 "c87b6a946088176fec244c8448cf97fc76729e80f523b759abc73ff058e9c39e"
+      url "https://github.com/dvaldivia/tukituki/releases/download/v0.1.3/tukituki_darwin_x86_64.tar.gz"
+      sha256 "6fdef0feeb84578c0f28fb6e191942e7c0c228b8eabbf7c2fc07747a24c53af1"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/dvaldivia/tukituki/releases/download/v0.1.2/tukituki_linux_arm64.tar.gz"
-      sha256 "22ba8d8b0092dad131584039c48a8522cfc75ae8ec3d3f440f68650482355100"
+      url "https://github.com/dvaldivia/tukituki/releases/download/v0.1.3/tukituki_linux_arm64.tar.gz"
+      sha256 "9726c46685583cc4b7e2b2496ec6ec0ab1b8a5074068c0441d63cd87ac22793b"
     end
     on_intel do
-      url "https://github.com/dvaldivia/tukituki/releases/download/v0.1.2/tukituki_linux_x86_64.tar.gz"
-      sha256 "a35865e8c01cd7df07e8dd2a9197524043ab4fe96cd8d0038557de76d1ca7fcf"
+      url "https://github.com/dvaldivia/tukituki/releases/download/v0.1.3/tukituki_linux_x86_64.tar.gz"
+      sha256 "bd701b313ebbef8d79949d141df8c4b4fffb2e28329c49ff09135e6113fa5087"
     end
   end
 
