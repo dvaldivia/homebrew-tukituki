@@ -1,34 +1,34 @@
 # Homebrew formula template for tukituki.
 #
-# `homebrew/render.sh` fills in 0.1.10 and the four __SHA__
+# `homebrew/render.sh` fills in 0.1.11 and the four __SHA__
 # placeholders, then commits the rendered file to
 # dvaldivia/homebrew-tukituki/Formula/tukituki.rb.
 
 class Tukituki < Formula
   desc "Terminal UI for managing multiple dev processes"
   homepage "https://github.com/dvaldivia/tukituki"
-  version "0.1.10"
+  version "0.1.11"
   license "Apache-2.0"
 
   on_macos do
     on_arm do
-      url "https://github.com/dvaldivia/tukituki/releases/download/v0.1.10/tukituki_darwin_arm64.tar.gz"
-      sha256 "81ace8d6bc25c4130a68b1b9da5264af5060d22de876a14a0b1dd55c0cc9ca37"
+      url "https://github.com/dvaldivia/tukituki/releases/download/v0.1.11/tukituki_darwin_arm64.tar.gz"
+      sha256 "8bb4abd86a88e19dcf2f631e7d29a2284da1028b4e0742d30a9f7da30d8420ea"
     end
     on_intel do
-      url "https://github.com/dvaldivia/tukituki/releases/download/v0.1.10/tukituki_darwin_x86_64.tar.gz"
-      sha256 "67d52190ebe0b76c6769bb36d70beee1c19959550e226b968045cf5d8e038f2c"
+      url "https://github.com/dvaldivia/tukituki/releases/download/v0.1.11/tukituki_darwin_x86_64.tar.gz"
+      sha256 "5ecfbc50eeec89e4895737a2dd4778e954abe365569bcd1912d2a8dae18e0467"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/dvaldivia/tukituki/releases/download/v0.1.10/tukituki_linux_arm64.tar.gz"
-      sha256 "fea5329f5a1478072c122f1d7f827e7bcb6cb359f48da0d6a353222368e6ad12"
+      url "https://github.com/dvaldivia/tukituki/releases/download/v0.1.11/tukituki_linux_arm64.tar.gz"
+      sha256 "7b5776ea974c7cdc3cca32a098e9c57ed74727c0dc24a0365219901fbbeabe15"
     end
     on_intel do
-      url "https://github.com/dvaldivia/tukituki/releases/download/v0.1.10/tukituki_linux_x86_64.tar.gz"
-      sha256 "fa2d325d65d68b31cef778e1c7c36bdbdfe9f369fca209df61d2f0d70beb9a15"
+      url "https://github.com/dvaldivia/tukituki/releases/download/v0.1.11/tukituki_linux_x86_64.tar.gz"
+      sha256 "cc9fa1c50405dbc4920fc7522e4df59b279a92e10d423711bccdef585417d4e4"
     end
   end
 
