@@ -1,34 +1,34 @@
 # Homebrew formula template for tukituki.
 #
-# `homebrew/render.sh` fills in 0.1.12 and the four __SHA__
+# `homebrew/render.sh` fills in 0.1.13 and the four __SHA__
 # placeholders, then commits the rendered file to
 # dvaldivia/homebrew-tukituki/Formula/tukituki.rb.
 
 class Tukituki < Formula
   desc "Terminal UI for managing multiple dev processes"
   homepage "https://github.com/dvaldivia/tukituki"
-  version "0.1.12"
+  version "0.1.13"
   license "Apache-2.0"
 
   on_macos do
     on_arm do
-      url "https://github.com/dvaldivia/tukituki/releases/download/v0.1.12/tukituki_darwin_arm64.tar.gz"
-      sha256 "f423e2dc683eac6ba1ee46f144cc55c81757cc2d7268d4371672afad9af48a7b"
+      url "https://github.com/dvaldivia/tukituki/releases/download/v0.1.13/tukituki_darwin_arm64.tar.gz"
+      sha256 "75f4ecc421e7b6cf3b7411ac886e785810e550b858f1f80f95aa469a9c626cc4"
     end
     on_intel do
-      url "https://github.com/dvaldivia/tukituki/releases/download/v0.1.12/tukituki_darwin_x86_64.tar.gz"
-      sha256 "c530cb530965c339d1515aa15553236099107173e119bb3f6fff58b260c1d9a8"
+      url "https://github.com/dvaldivia/tukituki/releases/download/v0.1.13/tukituki_darwin_x86_64.tar.gz"
+      sha256 "8eb515e6c06b275e5ff626212f4176b260a5f3553c396316dfd06b5940f2ac10"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/dvaldivia/tukituki/releases/download/v0.1.12/tukituki_linux_arm64.tar.gz"
-      sha256 "89114c93b462997fc07f5b46ea203fb2cc0e66b8faec575d3f42c846d11bbca1"
+      url "https://github.com/dvaldivia/tukituki/releases/download/v0.1.13/tukituki_linux_arm64.tar.gz"
+      sha256 "551f8c0448ddb3861257f8f61a264cc3ac9c6deb14bd50f9b1735af788972b0f"
     end
     on_intel do
-      url "https://github.com/dvaldivia/tukituki/releases/download/v0.1.12/tukituki_linux_x86_64.tar.gz"
-      sha256 "32669fa54fd6eb62bc6a823b505b30db8fba05983249e57a40f9fe0f6a623630"
+      url "https://github.com/dvaldivia/tukituki/releases/download/v0.1.13/tukituki_linux_x86_64.tar.gz"
+      sha256 "274a801f434ba40235e08bde0c1e677d83a9511a23c4fb985106d31b98a15f22"
     end
   end
 
